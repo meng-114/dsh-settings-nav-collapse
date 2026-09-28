@@ -1,6 +1,6 @@
 {
   "name": "@mengli114/dsh-settings-nav-collapse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DSH web client plugin: one toggle in the settings panel header collapses the settings navigation column into a narrow icon rail, so the settings content keeps a readable width on phones and other narrow viewports. The panel is located at runtime from the plugin's own node (no package-internal attribute), and the choice is remembered per browser.",
   "type": "module",
   "engines": {
