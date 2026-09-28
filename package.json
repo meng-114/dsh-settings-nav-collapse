@@ -1,0 +1,62 @@
+{
+  "name": "@mengli114/dsh-settings-nav-collapse",
+  "version": "1.0.0",
+  "description": "DSH web client plugin: one toggle in the settings panel header collapses the settings navigation column into a narrow icon rail, so the settings content keeps a readable width on phones and other narrow viewports. The panel is located at runtime from the plugin's own node (no package-internal attribute), and the choice is remembered per browser.",
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "client.js",
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check client.js",
+    "test": "node --test"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.5-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-client-plugin",
+    "cordis-plugin",
+    "settings",
+    "navigation",
+    "responsive",
+    "mobile",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meng-114/dsh-settings-nav-collapse.git"
+  },
+  "homepage": "https://github.com/meng-114/dsh-settings-nav-collapse#readme",
+  "bugs": {
+    "url": "https://github.com/meng-114/dsh-settings-nav-collapse/issues"
+  },
+  "license": "MIT"
+}

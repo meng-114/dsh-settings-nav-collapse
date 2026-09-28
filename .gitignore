@@ -1,0 +1,14 @@
+# Dependencies (installed by the dsh profile; consumers resolve their own)
+node_modules/
+
+# npm pack / publish leftovers
+*.tgz
+.npm/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor noise
+.vscode/
+.idea/
